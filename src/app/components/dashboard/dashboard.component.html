@@ -1,0 +1,18 @@
+<div class="container">
+   <div class="row">
+     <div *ngFor="let std of StdList">
+
+    <div div class="card" style="width: 18rem;">
+      <div class="card-body ">
+        <h5 class="card-title">Id: {{std.id}}</h5>
+        <p class="card-text">Name: {{std.name}}</p>
+        <p class="card-text">email: {{std.email}}</p>
+        <p class="card-text">contact: {{std.contact}}</p>
+        <button routerLink="/update" [queryParams]="{id: std.id}">Edit</button>
+        <button  (click)="deleteRecord(std.id)">delete</button>
+       </div>
+     </div>
+    </div>
+   </div>
+</div>
+

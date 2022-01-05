@@ -1,0 +1,36 @@
+
+ <h3>Registration</h3>
+
+    <form [formGroup]="userRegistrationForm" (ngSubmit)="getRegistered()">
+      <div class="form-group">
+  <label>
+    Name:
+     <input type="text" formControlName="name" [(ngModel)]="std.name" >
+  </label></div>
+  <div class="form-group">
+  <label>
+    Email:
+     <input type="text" formControlName="email" [(ngModel)]="std.email">
+  </label></div>
+  <div class="form-group">
+  <label>
+    Contact:
+     <input type="text" formControlName="contact" [(ngModel)]="std.contact" >
+  </label>
+</div>
+<div class="form-group">
+  <label>
+    Password:
+     <input type="text" formControlName="password" >
+  </label>
+</div>
+<div class="form-group">
+ <label>
+    City:
+    <input type="text" formControlName="city">
+  </label>
+</div>
+
+  <button type ="submit" [disabled]="!userRegistrationForm.valid">Submit</button>
+
+</form>

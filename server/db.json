@@ -1,0 +1,15 @@
+{
+  "students": [
+    {
+      "name": "ruchi",
+      "email": "rk@123",
+      "id": 9
+    },
+    {
+      "name": "Rohit",
+      "email": "rohit@123",
+      "id": 10
+    }
+
+  ]
+}

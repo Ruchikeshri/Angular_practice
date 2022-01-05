@@ -1,0 +1,30 @@
+<div class="container">
+
+
+    <label for="exampleInputEmail1">Id</label>
+    <div>
+    <input type="email" id="exampleInputEmail1" [(ngModel)]="std.id"  placeholder="Enter Name" required>
+
+  </div>
+
+    <label for="exampleInputEmail1">Name</label>
+    <div>
+    <input type="email"  id="exampleInputEmail1" [(ngModel)]="std.name"  placeholder="Enter Name" required>
+
+  </div>
+
+    <label for="exampleInputEmail2">Email</label>
+    <div>
+    <input type="email" id="exampleInputEmail2" [(ngModel)]="std.email"   placeholder="Enter email" required>
+
+  </div>
+  <label for="contact1">Contact:</label>
+    <div>
+    <input type="email" id="exampleInputEmail1" [(ngModel)]="std.contact"  placeholder="Enter Name" required>
+
+  </div>
+
+
+  <button type="submit" class="btn btn-primary" (click)="updateData(this.std)">Submit</button>
+
+</div>
